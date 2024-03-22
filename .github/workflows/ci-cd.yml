@@ -34,3 +34,13 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+            - name: FIXME alert
+  # You may pin to the exact commit or the version.
+  # uses: bbugh/action-fixme-check@5db47ef17c01f87b3db4110abb17c6e38fbbe33f
+  uses: bbugh/action-fixme-check@v1.1.0
+  with:
+    # The pipe-delimited searchable terms to pass as a regex group to `git grep`.
+    terms: # optional, default is FIXME
+    # Whether the searchable terms passed to `git grep` should be case-sensitive or not.
+    case-sensitive: # optional, default is true
+          
